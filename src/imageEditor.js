@@ -131,7 +131,6 @@ class ImageEditor extends Component {
         const { canChangeContent } = this.props;
         this.editor = await PhotoEditorSDKUI.init({
             container: "#editor",
-            license: JSON.stringify(imglyLicence),
             image: "https://d2xt3xymj142xp.cloudfront.net/161371810825470/socialtemplate/1668501717401.png", // Image url or Image path relative to assets folder
             theme: "light",
             defaultTool: "library",
